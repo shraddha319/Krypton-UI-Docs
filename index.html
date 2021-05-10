@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.7" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Krypton UI | Docs</title>
+    <link rel="stylesheet" href="https://krypton-ui.netlify.app/main.css" />
+    <!-- <script defer src="https://krypton-ui.netlify.app/script.js"></script> -->
+    <script defer src="./script1.js"></script>
+
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- fontawesome cdn-->
+    <script defer src="https://use.fontawesome.com/releases/v5.15.2/js/all.js"
+        integrity="sha384-vuFJ2JiSdUpXLKGK+tDteQZBqNlMwAjhZ3TvPaDfN9QmbPb7Q8qUpbSNapQev3YF" crossorigin="anonymous">
+    </script>
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("./header.html");
+            $("#footer").load("./footer.html");
+        });
+    </script>
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <main class="main main--landing">
+        <section class="main__hero hero">
+            <h1 class="hero__title">Krypton UI</h1>
+            <h2 class="title--lg">Build Modular UI with ease.</h2>
+            <p class="hero__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum sit
+                vitae, pariatur.
+            </p>
+            <div class="hero__link flex--row">
+                <a href="documentation.html" class="btn btn--lg btn--primary">Documentation</a>
+                <a class="btn btn--lg btn--icon--right btn--secondary">
+                    <i class="fab fa--md fa-github"></i>
+                    <span class="btn__text">GitHub</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>

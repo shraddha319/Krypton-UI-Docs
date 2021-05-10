@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Krypton UI | Docs</title>
+    <link rel="stylesheet" href="https://krypton-ui.netlify.app/main.css" />
+    <!-- <script defer src="https://krypton-ui.netlify.app/script.js"></script> -->
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/docs.css">
+
+    <!-- fontawesome cdn-->
+    <script defer src="https://use.fontawesome.com/releases/v5.15.2/js/all.js"
+        integrity="sha384-vuFJ2JiSdUpXLKGK+tDteQZBqNlMwAjhZ3TvPaDfN9QmbPb7Q8qUpbSNapQev3YF" crossorigin="anonymous">
+    </script>
+
+    <!-- highlight js -->
+
+    <link rel="stylesheet" href="../syntax-highlighter/default.min.css">
+    <script src="../syntax-highlighter/highlight.min.js"></script>
+    <link rel="stylesheet" href="../syntax-highlighter/atelier-cave-light.css" />
+    <script defer src="../syntax-highlighter/copyToClipboard.js"></script>
+
+    <script>
+        hljs.highlightAll();
+    </script>
+
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("/header.html");
+            $("#footer").load("/footer.html");
+        });
+    </script>
+    <script defer src="/docs.js"></script>
+
+</head>
+
+<body>
+    <div id="header">
+    </div>
+    <nav class="side-nav">
+        <ul class="list--no-bullets">
+            <li class="side-nav__item">
+                <a href="/getting-started.html" class="link">Getting Started</a>
+            </li>
+            <li class="side-nav__item">
+                <a href="#" class="link">Theme</a>
+            </li>
+            <li class="side-nav__item">
+                <a href="#" class="link">Typography</a>
+            </li>
+            <li class="side-nav__item side-nav__drop-down">
+                <a class="link">Components
+                    <span><i class="fas fa-caret-down"></i></span>
+                </a>
+                <ul class="list--no-bullets">
+                    <li class="side-nav__item">
+                        <a class="link" href="/components/alert.html">Alert</a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a class="link" href="/components/avatar.html">Avatar</a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a class="link" href="/components/badge.html">Badge</a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a class="link" href="/components/button.html">Button</a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a class="link" href="/components/card.html">Card</a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a class="link" href="/components/form.html">Form</a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a class="link" href="/components/image.html">Image</a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a class="link" href="/components/list.html">List</a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a class="link" href="/components/modal.html">Modal</a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a class="link" href="/components/navbar.html">Navbar</a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a class="link" href="/components/toast.html">Toast</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <main class="main main--documentation">
+        <div id="side-nav"></div>
+        <section class="docs">
+            <h1 class="comp__title title--lg">List</h1>
+            <p class="comp__details">
+                A list is a group of related content.
+            </p>
+            <article class="comp__usage">
+                <h2 class="comp__title title--md">Basic List</h2>
+                <div class="comp__preview">
+                    <ul class="list">
+                        <li class="item list__item">
+                            Cras justo odio
+                        </li>
+                        <li class="item list__item">
+                            Dapibus ac facilisis in
+                        </li>
+                        <li class="item list__item">
+                            Morbi leo risus
+                        </li>
+                        <li class="item list__item">
+                            Porta ac consectetur ac
+                        </li>
+                    </ul>
+                    <pre class="code-hljs">
+                        <button class="btn btn--icon btn--sm btn--copy"><i class="fas fa-copy"></i></button>
+                        <code class="language-html">
+        &lt;ul class=&quot;list&quot;&gt;
+            &lt;li class=&quot;item list__item&quot;&gt;
+                Cras justo odio
+            &lt;/li&gt;
+            &lt;li class=&quot;item list__item&quot;&gt;
+                Dapibus ac facilisis in
+            &lt;/li&gt;
+            &lt;li class=&quot;item list__item&quot;&gt;
+                Morbi leo risus
+            &lt;/li&gt;
+            &lt;li class=&quot;item list__item&quot;&gt;
+                Porta ac consectetur ac
+            &lt;/li&gt;
+        &lt;/ul&gt;
+                        </code>
+                    </pre>
+                </div>
+            </article>
+            <article class="comp__usage">
+                <h2 class="comp__title title--md">List with Links</h2>
+                <div class="comp__preview">
+                    <ul class="list list--links">
+                        <li class="item list__item">
+                            <a href="#" class="link">
+                                Cras justo odio
+                            </a>
+                        </li>
+                        <li class="item list__item">
+                            <a class="link">
+                                Dapibus ac facilisis in
+                            </a>
+                        </li>
+                        <li class="item list__item">
+                            <a class="link">
+                                Morbi leo risus
+                            </a>
+                        </li>
+                        <li class="item list__item">
+                            <a class="link">
+                                Porta ac consectetur ac
+                            </a>
+                        </li>
+                    </ul>
+                    <pre class="code-hljs">
+                        <button class="btn btn--icon btn--sm btn--copy"><i class="fas fa-copy"></i></button>
+                        <code class="language-html">
+        &lt;ul class=&quot;list list--links&quot;&gt;
+            &lt;li class=&quot;item list__item&quot;&gt;
+                &lt;a href=&quot;#&quot; class=&quot;link&quot;&gt;
+                    Cras justo odio
+                &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;item list__item&quot;&gt;
+                &lt;a class=&quot;link&quot;&gt;
+                    Dapibus ac facilisis in
+                &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;item list__item&quot;&gt;
+                &lt;a class=&quot;link&quot;&gt;
+                    Morbi leo risus
+                &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;item list__item&quot;&gt;
+                &lt;a class=&quot;link&quot;&gt;
+                    Porta ac consectetur ac
+                &lt;/a&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+                        </code>
+                    </pre>
+                </div>
+            </article>
+            <article class="comp__usage">
+                <h2 class="comp__title title--md">List with Notification Badge</h2>
+                <div class="comp__preview">
+                    <ul class="list">
+                        <li class="list__item justify-between">
+                            Cras justo odio
+                            <span class="list__item__badge badge--round">14</span>
+                        </li>
+                        <li class="list__item justify-between">
+                            Dapibus ac facilisis in
+                            <span class="list__item__badge badge--square">4</span>
+                        </li>
+                    </ul>
+                    <pre class="code-hljs">
+                        <button class="btn btn--icon btn--sm btn--copy"><i class="fas fa-copy"></i></button>
+                        <code class="language-html">
+        &lt;ul class=&quot;list&quot;&gt;
+            &lt;li class=&quot;list__item justify-between&quot;&gt;
+                Cras justo odio
+                &lt;span class=&quot;list__item__badge badge--round&quot;&gt;14&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;list__item justify-between&quot;&gt;
+                Dapibus ac facilisis in
+                &lt;span class=&quot;list__item__badge badge--square&quot;&gt;4&lt;/span&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+                        </code>
+                    </pre>
+                </div>
+            </article>
+            <article class="comp__usage">
+                <h2 class="comp__title title--md">List with Content</h2>
+                <div class="comp__preview">
+                    <ul class="list">
+                        <li class="list__item">
+                            <div class="list__item__header justify-between">
+                                <h3 class="list__item__header__title">List heading</h3>
+                                <small class="text-muted">3 days ago</small>
+                            </div>
+                            <p class="list__item__body">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Laboriosam, minima
+                                quis, omnis, quibusdam nam
+                                velit atque molestias maxime ad saepe error! Cum saepe eius quisquam possimus quod nihil
+                                rem
+                                officiis.
+                            </p>
+                            <small class="text--muted list__item__footer">Lorem ipsum dolor sit amet</small>
+                        </li>
+                        <li class="list__item">
+                            <div class="list__item__header justify-between">
+                                <h3 class="list__item__header__title">List heading</h3>
+                                <small class="text-muted">3 days ago</small>
+                            </div>
+                            <p class="list__item__body">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Laboriosam, minima
+                                quis, omnis, quibusdam nam
+                                velit atque molestias maxime ad saepe error! Cum saepe eius quisquam possimus quod nihil
+                                rem
+                                officiis.
+                            </p>
+                            <small class="text--muted list__item__footer">Lorem ipsum dolor sit amet</small>
+                        </li>
+                    </ul>
+                    <pre class="code-hljs">
+                        <button class="btn btn--icon btn--sm btn--copy"><i class="fas fa-copy"></i></button>
+                        <code class="language-html">
+    &lt;ul class=&quot;list&quot;&gt;
+        &lt;li class=&quot;list__item&quot;&gt;
+            &lt;div class=&quot;list__item__header justify-between&quot;&gt;
+                &lt;h3 class=&quot;list__item__header__title&quot;&gt;List heading&lt;/h3&gt;
+                &lt;small class=&quot;text-muted&quot;&gt;3 days ago&lt;/small&gt;
+            &lt;/div&gt;
+            &lt;p class=&quot;list__item__body&quot;&gt;Lorem ipsum dolor sit amet consectetur, 
+            adipisicing elit. Laboriosam, minima quis, omnis, quibusdam nam velit atque 
+            molestias maxime ad saepe error! Cum saepe eius quisquam possimus quod nihil 
+            rem officiis.
+            &lt;/p&gt;
+            &lt;small class=&quot;text--muted list__item__footer&quot;&gt;
+                Lorem ipsum dolor sit amet
+            &lt;/small&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;list__item&quot;&gt;
+            &lt;div class=&quot;list__item__header justify-between&quot;&gt;
+                &lt;h3 class=&quot;list__item__header__title&quot;&gt;List heading&lt;/h3&gt;
+                &lt;small class=&quot;text-muted&quot;&gt;3 days ago&lt;/small&gt;
+            &lt;/div&gt;
+            &lt;p class=&quot;list__item__body&quot;&gt;Lorem ipsum dolor sit amet consectetur, 
+            adipisicing elit. Laboriosam, minima quis, omnis, quibusdam nam velit atque 
+            molestias maxime ad saepe error! Cum saepe eius quisquam possimus quod nihil 
+            rem officiis.
+            &lt;/p&gt;
+            &lt;small class=&quot;text--muted list__item__footer&quot;&gt;
+                Lorem ipsum dolor sit amet
+            &lt;/small&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+                        </code>
+                    </pre>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Krypton UI | Docs</title>
+    <link rel="stylesheet" href="https://krypton-ui.netlify.app/main.css" />
+    <!-- <script defer src="https://krypton-ui.netlify.app/script.js"></script> -->
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/docs.css">
+
+    <!-- fontawesome cdn-->
+    <script defer src="https://use.fontawesome.com/releases/v5.15.2/js/all.js"
+        integrity="sha384-vuFJ2JiSdUpXLKGK+tDteQZBqNlMwAjhZ3TvPaDfN9QmbPb7Q8qUpbSNapQev3YF" crossorigin="anonymous">
+    </script>
+
+    <!-- highlight js -->
+
+    <link rel="stylesheet" href="../syntax-highlighter/default.min.css">
+    <script src="../syntax-highlighter/highlight.min.js"></script>
+    <link rel="stylesheet" href="../syntax-highlighter/atelier-cave-light.css" />
+    <script defer src="../syntax-highlighter/copyToClipboard.js"></script>
+
+    <script>
+        hljs.highlightAll();
+    </script>
+
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("/header.html");
+            $("#footer").load("/footer.html");
+        });
+    </script>
+    <script defer src="/docs.js"></script>
+
+</head>
+
+<body>
+    <div id="header">
+    </div>
+    <nav class="side-nav">
+        <ul class="list--no-bullets">
+            <li class="side-nav__item">
+                <a href="/getting-started.html" class="link">Getting Started</a>
+            </li>
+            <li class="side-nav__item">
+                <a href="#" class="link">Theme</a>
+            </li>
+            <li class="side-nav__item">
+                <a href="#" class="link">Typography</a>
+            </li>
+            <li class="side-nav__item side-nav__drop-down">
+                <a class="link">Components
+                    <span><i class="fas fa-caret-down"></i></span>
+                </a>
+                <ul class="list--no-bullets">
+                    <li class="side-nav__item">
+                        <a class="link" href="/components/alert.html">Alert</a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a class="link" href="/components/avatar.html">Avatar</a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a class="link" href="/components/badge.html">Badge</a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a class="link" href="/components/button.html">Button</a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a class="link" href="/components/card.html">Card</a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a class="link" href="/components/form.html">Form</a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a class="link" href="/components/image.html">Image</a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a class="link" href="/components/list.html">List</a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a class="link" href="/components/modal.html">Modal</a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a class="link" href="/components/navbar.html">Navbar</a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a class="link" href="/components/toast.html">Toast</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="main main--documentation">
+        <div id="side-nav"></div>
+        <section class="docs">
+            <h1 class="comp__title title--lg">Button</h1>
+            <p class="comp__details">
+                The Button component is used to trigger an action or event, such as submitting a form, opening a dialog,
+                canceling an action, or performing a delete operation.
+            </p>
+
+            <article class="comp__usage">
+                <h2 class="comp__title title--md">Button Usage</h2>
+                <div class="comp__preview">
+                    <button class="btn btn--primary">Primary</button>
+                    <button class="btn btn--secondary">Secondary</button>
+                </div>
+                <pre class="code-hljs">
+                    <button class="btn btn--icon btn--sm btn--copy"><i class="fas fa-copy"></i></button>
+                    <code class="language-html">
+        &lt;button class=&quot;btn btn--primary&quot;&gt;Primary&lt;/button&gt;
+        &lt;button class=&quot;btn btn--secondary&quot;&gt;Secondary&lt;/button&gt;
+                    </code>
+                </pre>
+            </article>
+            <article class="comp__usage">
+                <h2 class="comp__title title--md">Button Sizes</h2>
+                <div class="comp__preview">
+                    <button class="btn btn--primary btn--sm">Small</button>
+                    <button class="btn btn--primary btn--md">Medium</button>
+                    <button class="btn btn--primary btn--lg">Large</button>
+                </div>
+                <pre class="code-hljs">
+                    <button class="btn btn--icon btn--sm btn--copy"><i class="fas fa-copy"></i></button>
+                    <code class="language-html">
+        &lt;button class=&quot;btn btn--primary btn--sm&quot;&gt;Small&lt;/button&gt;
+        &lt;button class=&quot;btn btn--primary btn--md&quot;&gt;Medium&lt;/button&gt;
+        &lt;button class=&quot;btn btn--primary btn--lg&quot;&gt;Large&lt;/button&gt;
+                    </code>
+                </pre>
+            </article>
+            <article class="comp__usage">
+                <h2 class="comp__title title--md">Button Variants</h2>
+                <div class="comp__preview">
+                    <button class="btn btn--success">Success</button>
+                    <button class="btn btn--danger">Danger</button>
+                    <button class="btn btn--warning">Warning</button>
+                    <button class="btn btn--info ">Info</button>
+                    <button class="btn btn--light">Light</button>
+                    <button class="btn btn--dark ">Dark</button>
+                    <button class="btn btn--link ">Link</button>
+                </div>
+                <pre class="code-hljs">
+                    <button class="btn btn--icon btn--sm btn--copy"><i class="fas fa-copy"></i></button>
+                    <code class="language-html">
+        &lt;button class=&quot;btn btn--success&quot;&gt;Success&lt;/button&gt;
+        &lt;button class=&quot;btn btn--danger&quot;&gt;Danger&lt;/button&gt;
+        &lt;button class=&quot;btn btn--warning&quot;&gt;Warning&lt;/button&gt;
+        &lt;button class=&quot;btn btn--info &quot;&gt;Info&lt;/button&gt;
+        &lt;button class=&quot;btn btn--light&quot;&gt;Light&lt;/button&gt;
+        &lt;button class=&quot;btn btn--dark &quot;&gt;Dark&lt;/button&gt;
+        &lt;button class=&quot;btn btn--link &quot;&gt;Link&lt;/button&gt;
+                    </code>
+                </pre>
+            </article>
+            <article class="comp__usage">
+                <h2 class="comp__title title--md">Button States</h2>
+                <div class="comp__preview">
+                    <button class="btn btn--primary btn--disabled">Disabled</button>
+                    <button class="btn btn--disabled btn--icon--right btn--primary">
+                        <p class="btn__text">Loading</p>
+                        <span class="btn__icon fa--xs">
+                            <i class="fa fa-spinner fa-spin"></i>
+                        </span>
+                    </button>
+                </div>
+                <pre class="code-hljs">
+                    <button class="btn btn--icon btn--sm btn--copy"><i class="fas fa-copy"></i></button>
+                    <code class="language-html">
+        &lt;button class=&quot;btn btn--primary btn--disabled&quot;&gt;Disabled&lt;/button&gt;
+
+        &lt;button class=&quot;btn btn--disabled btn--icon--right btn--primary&quot;&gt;
+            &lt;p class=&quot;btn__text&quot;&gt;Loading&lt;/p&gt;
+            &lt;span class=&quot;btn__icon fa--xs&quot;&gt;
+                &lt;i class=&quot;fa fa-spinner fa-spin&quot;&gt;&lt;/i&gt;
+            &lt;/span&gt;
+        &lt;/button&gt;
+                    </code>
+                </pre>
+            </article>
+            <article class="comp__usage">
+                <h2 class="comp__title title--md">Button With Icon</h2>
+                <div class="comp__preview">
+                    <button class="btn btn--icon--right btn--primary">
+                        <p class="btn__text">Settings</p>
+                        <span class="btn__icon fa--xs">
+                            <i class="fas fa-wrench"></i>
+                        </span>
+                    </button>
+                    <button class="btn btn--icon--left btn--primary">
+                        <span class="btn__icon fa--xs">
+                            <i class=" fas fa-envelope"></i>
+                        </span>
+                        <p class="btn__text">Email</p>
+                    </button>
+                </div>
+                <pre class="code-hljs">
+                    <button class="btn btn--icon btn--sm btn--copy"><i class="fas fa-copy"></i></button>
+                    <code class="language-html">
+        &lt;button class=&quot;btn btn--icon--right btn--primary&quot;&gt;
+            &lt;p class=&quot;btn__text&quot;&gt;Settings&lt;/p&gt;
+            &lt;span class=&quot;btn__icon fa--xs&quot;&gt;
+                &lt;i class=&quot;fas fa-wrench&quot;&gt;&lt;/i&gt;
+            &lt;/span&gt;
+        &lt;/button&gt;
+
+        &lt;button class=&quot;btn btn--icon--left btn--primary&quot;&gt;
+            &lt;span class=&quot;btn__icon fa--xs&quot;&gt;
+                &lt;i class=&quot; fas fa-envelope&quot;&gt;&lt;/i&gt;
+            &lt;/span&gt;
+            &lt;p class=&quot;btn__text&quot;&gt;Email&lt;/p&gt;
+        &lt;/button&gt;
+                    </code>
+                </pre>
+            </article>
+            <article class="comp__usage">
+                <h2 class="comp__title title--md">Social Buttons</h2>
+                <div class="comp__preview">
+                    <button class="btn btn--icon--right btn--social-twitter">
+                        <p class="btn__text">Twitter</p>
+                        <span class="btn__icon fa--xs">
+                            <i class="fab fa-twitter"></i>
+                        </span>
+                    </button>
+                    <button class="btn btn--icon--left btn--social-facebook">
+                        <span class="btn__icon fa--xs">
+                            <i class="fab fa-facebook"></i>
+                        </span>
+                        <p class="btn__text">Facebook</p>
+                    </button>
+                </div>
+                <pre class="code-hljs">
+                    <button class="btn btn--icon btn--sm btn--copy"><i class="fas fa-copy"></i></button>
+                    <code class="language-html">
+        &lt;button class=&quot;btn btn--icon--right btn--social-twitter&quot;&gt;
+            &lt;p class=&quot;btn__text&quot;&gt;Twitter&lt;/p&gt;
+            &lt;span class=&quot;btn__icon fa--xs&quot;&gt;
+                &lt;i class=&quot;fab fa-twitter&quot;&gt;&lt;/i&gt;
+            &lt;/span&gt;
+        &lt;/button&gt;
+
+        &lt;button class=&quot;btn btn--icon--left btn--social-facebook&quot;&gt;
+            &lt;span class=&quot;btn__icon fa--xs&quot;&gt;
+                &lt;i class=&quot;fab fa-facebook&quot;&gt;&lt;/i&gt;
+            &lt;/span&gt;
+            &lt;p class=&quot;btn__text&quot;&gt;Facebook&lt;/p&gt;
+        &lt;/button&gt;
+                    </code>
+                </pre>
+            </article>
+            <article class="comp__usage">
+                <h2 class="comp__title title--md">Icon Buttons</h2>
+                <div class="comp__preview">
+                    <button class="btn btn--icon">
+                        <img src="../assets/button/heart-solid.svg" class="icon--md">
+                    </button>
+                    <button class="btn btn--icon">
+                        <img src="../assets/button/share-alt-square-solid.svg" class="icon--md">
+                    </button>
+                    <button class="btn btn--icon">
+                        <img src="../assets/button/thumbs-up-solid.svg" class="icon--md">
+                    </button>
+                </div>
+                <pre class="code-hljs">
+                    <button class="btn btn--icon btn--sm btn--copy"><i class="fas fa-copy"></i></button>
+                    <code class="language-html">
+        &lt;button class=&quot;btn btn--icon&quot;&gt;
+            &lt;img src=&quot;../assets/button/heart-solid.svg&quot; class=&quot;icon--md&quot;&gt;
+        &lt;/button&gt;
+        &lt;button class=&quot;btn btn--icon&quot;&gt;
+            &lt;img src=&quot;../assets/button/share-alt-square-solid.svg&quot; class=&quot;icon--md&quot;&gt;
+        &lt;/button&gt;
+        &lt;button class=&quot;btn btn--icon&quot;&gt;
+            &lt;img src=&quot;../assets/button/thumbs-up-solid.svg&quot; class=&quot;icon--md&quot;&gt;
+        &lt;/button&gt;
+                    </code>
+                </pre>
+            </article>
+            <article class="comp__usage">
+                <h2 class="comp__title title--md">fa-awesome Icon Buttons</h2>
+                <div class="comp__preview">
+                    <button class="btn btn--icon">
+                        <span class="fa--md fa--primary">
+                            <i class="fas fa-shopping-cart"></i>
+                        </span>
+                    </button>
+                    <button class="btn btn--icon">
+                        <span class="fa--md fa--primary">
+                            <i class="fas fa-times"></i>
+                        </span>
+                    </button>
+                    <button class="btn btn--icon">
+                        <span class="fa--md fa--hover fa--primary">
+                            <i class="fas fa-user-circle"></i>
+                        </span>
+                    </button>
+                    <button class="btn btn--icon">
+                        <span class="fa--md fa--hover fa--primary">
+                            <i class="fas fa-heart"></i>
+                        </span>
+                    </button>
+                </div>
+                <pre class="code-hljs">
+                    <button class="btn btn--icon btn--sm btn--copy"><i class="fas fa-copy"></i></button>
+                    <code class="language-html">
+        &lt;button class=&quot;btn btn--icon&quot;&gt;
+            &lt;span class=&quot;fa--md fa--primary&quot;&gt;
+                &lt;i class=&quot;fas fa-shopping-cart&quot;&gt;&lt;/i&gt;
+            &lt;/span&gt;
+        &lt;/button&gt;
+        &lt;button class=&quot;btn btn--icon&quot;&gt;
+            &lt;span class=&quot;fa--md fa--primary&quot;&gt;
+                &lt;i class=&quot;fas fa-times&quot;&gt;&lt;/i&gt;
+            &lt;/span&gt;
+        &lt;/button&gt;
+        &lt;button class=&quot;btn btn--icon&quot;&gt;
+            &lt;span class=&quot;fa--md fa--hover fa--primary&quot;&gt;
+                &lt;i class=&quot;fas fa-user-circle&quot;&gt;&lt;/i&gt;
+            &lt;/span&gt;
+        &lt;/button&gt;
+        &lt;button class=&quot;btn btn--icon&quot;&gt;
+            &lt;span class=&quot;fa--md fa--hover fa--primary&quot;&gt;
+                &lt;i class=&quot;fas fa-heart&quot;&gt;&lt;/i&gt;
+            &lt;/span&gt;
+        &lt;/button&gt;
+                    </code>
+                </pre>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>

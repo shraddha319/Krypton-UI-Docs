@@ -1,0 +1,43 @@
+.main {
+    /* margin-top: 300; */
+}
+
+#header {
+    position: fixed;
+    z-index: 1;
+}
+
+.main__hero {
+    width: 60%;
+    margin: 200px auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.hero {
+    text-align: center;
+}
+
+.hero>* {
+    margin: 0.5em 0;
+}
+
+.hero__title {
+    font-size: 4.5rem;
+}
+
+.hero__title strong {
+    color: var(--clr-primary);
+}
+
+.hero__description {
+    font-weight: 600;
+    font-size: 2rem;
+    color: rgba(0%, 0%, 0%, 0.7);
+    margin-bottom: 1.2em;
+}
+
+.hero__link .btn {
+    margin: 0 1rem;
+}

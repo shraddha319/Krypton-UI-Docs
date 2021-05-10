@@ -1,0 +1,125 @@
+.main--documentation {
+  margin-left: 25%;
+  width: 75%;
+  margin-top: 100px;
+  /* height: 100%; */
+}
+
+.docs {
+  width: 100%;
+}
+
+.code-hljs {
+  position: relative;
+  width: 75%;
+}
+
+.code-hljs code {
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+}
+
+.code-hljs .btn--copy {
+  position: absolute;
+  right: 0;
+  top: 40px;
+  color: rgba(0%, 0%, 0%, 0.5);
+  font-size: 1.1rem;
+}
+
+.comp__title {
+  font-weight: 600;
+  margin: 1em 0;
+}
+
+.comp__details {
+  font-size: 1rem;
+}
+
+.side-nav {
+  background: var(--clr-gray-light);
+  height: 100%;
+  width: 300px;
+  color: var(--clr-black);
+  font-weight: 600;
+  position: fixed;
+  top: 0;
+  left: 0;
+  letter-spacing: 1px;
+}
+
+.side-nav>ul {
+  margin-top: 84px;
+}
+
+.side-nav__item>.link {
+  border-left: 3px solid transparent;
+  padding: 0.6em 1.5em;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+
+.side-nav__item>.link:hover,
+.side-nav__item>.link:active {
+  border-left-color: var(--clr-primary);
+  background-color: rgba(100%, 100%, 100%, 0.8);
+}
+
+.side-nav__drop-down .fa-caret-down.rotate {
+  transform: translateY(-50%) rotate(-180deg);
+}
+
+.side-nav__drop-down ul .link {
+  padding-left: 100px;
+  text-transform: capitalize;
+}
+
+.side-nav__drop-down ul {
+  display: none;
+}
+
+.side-nav__drop-down ul.show {
+  display: block;
+}
+
+.side-nav__item .fa-caret-down {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+}
+
+.side-nav__item .link.active {
+  background-color: rgba(100%, 100%, 100%, 0.8);
+  border-left-color: var(--clr-primary);
+}
+
+
+.theme--color .color__container {
+  width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0.5rem;
+}
+
+.theme--color .color__display {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+}
+
+.color__container .color__hex {
+  text-transform: uppercase;
+}
+
+.typography__container * {
+  margin: 0.5em 0;
+}
+
+.comp__preview .header {
+  position: static;
+  width: 1300px;
+}

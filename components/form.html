@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Krypton UI | Docs</title>
+    <link rel="stylesheet" href="https://krypton-ui.netlify.app/main.css" />
+    <!-- <script defer src="https://krypton-ui.netlify.app/script.js"></script> -->
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/docs.css">
+
+    <!-- fontawesome cdn-->
+    <script defer src="https://use.fontawesome.com/releases/v5.15.2/js/all.js"
+        integrity="sha384-vuFJ2JiSdUpXLKGK+tDteQZBqNlMwAjhZ3TvPaDfN9QmbPb7Q8qUpbSNapQev3YF" crossorigin="anonymous">
+    </script>
+
+    <!-- highlight js -->
+
+    <link rel="stylesheet" href="../syntax-highlighter/default.min.css">
+    <script src="../syntax-highlighter/highlight.min.js"></script>
+    <link rel="stylesheet" href="../syntax-highlighter/atelier-cave-light.css" />
+    <script defer src="../syntax-highlighter/copyToClipboard.js"></script>
+
+    <script>
+        hljs.highlightAll();
+    </script>
+
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("/header.html");
+            $("#footer").load("/footer.html");
+        });
+    </script>
+    <script defer src="/docs.js"></script>
+
+</head>
+
+<body>
+    <div id="header">
+    </div>
+    <nav class="side-nav">
+        <ul class="list--no-bullets">
+            <li class="side-nav__item">
+                <a href="/getting-started.html" class="link">Getting Started</a>
+            </li>
+            <li class="side-nav__item">
+                <a href="#" class="link">Theme</a>
+            </li>
+            <li class="side-nav__item">
+                <a href="#" class="link">Typography</a>
+            </li>
+            <li class="side-nav__item side-nav__drop-down">
+                <a class="link">Components
+                    <span><i class="fas fa-caret-down"></i></span>
+                </a>
+                <ul class="list--no-bullets">
+                    <li class="side-nav__item">
+                        <a class="link" href="/components/alert.html">Alert</a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a class="link" href="/components/avatar.html">Avatar</a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a class="link" href="/components/badge.html">Badge</a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a class="link" href="/components/button.html">Button</a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a class="link" href="/components/card.html">Card</a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a class="link" href="/components/form.html">Form</a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a class="link" href="/components/image.html">Image</a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a class="link" href="/components/list.html">List</a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a class="link" href="/components/modal.html">Modal</a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a class="link" href="/components/navbar.html">Navbar</a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a class="link" href="/components/toast.html">Toast</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="main main--documentation">
+        <div id="side-nav"></div>
+        <section class="docs">
+            <h1 class="comp__title title--lg">Form</h1>
+            <p class="comp__details">
+                A form displays a set of related user input fields in a structured way.
+            </p>
+
+            <article class="comp__usage">
+                <h2 class="comp__title title--md">Basic Form Fields</h2>
+                <p class="comp__details">
+                    A field is a form element containing a label and an input
+                </p>
+                <div class="comp__preview">
+                    <div>
+                        <div class="form__field field">
+                            <label class="field__label" for="email">Email</label>
+                            <input class="field__input" id="email" type="email" placeholder="Enter email"
+                                autocomplete="email">
+                            <small class="field__text text--muted">We'll never share your email with anyone</small>
+                        </div>
+                        <pre class="code-hljs">
+                            <button class="btn btn--icon btn--sm btn--copy"><i class="fas fa-copy"></i></button>
+                            <code class="language-html">
+    &lt;div class=&quot;form__field field&quot;&gt;
+        &lt;label class=&quot;field__label&quot; for=&quot;email&quot;&gt;Email&lt;/label&gt;
+        &lt;input class=&quot;field__input&quot; id=&quot;email&quot; type=&quot;email&quot; placeholder=&quot;Enter email&quot;
+            autocomplete=&quot;email&quot;&gt;
+        &lt;small class=&quot;field__text text-muted&quot;&gt;We&apos;ll never share your email with anyone&lt;/small&gt;
+    &lt;/div&gt;
+                            </code>
+                        </pre>
+                    </div>
+                    <div>
+                        <div class="form__field field">
+                            <label class="field__label" for="password">Current Password</label>
+                            <input class="field__input" id="password" type="password" placeholder="Enter password"
+                                autocomplete="current-password">
+                        </div>
+                        <div class="form__field field">
+                            <label class="field__label" for="password">New Password</label>
+                            <input class="field__input" id="password" type="password" placeholder="Enter password"
+                                autocomplete="new-password">
+                        </div>
+                        <pre class="code-hljs">
+                            <button class="btn btn--icon btn--sm btn--copy"><i class="fas fa-copy"></i></button>
+                            <code class="language-html">
+    &lt;div class=&quot;form__field field&quot;&gt;
+        &lt;label class=&quot;field__label&quot; for=&quot;password&quot;&gt;Current Password&lt;/label&gt;
+        &lt;input class=&quot;field__input&quot; id=&quot;password&quot; type=&quot;password&quot; placeholder=&quot;Enter password&quot;
+            autocomplete=&quot;current-password&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;form__field field&quot;&gt;
+        &lt;label class=&quot;field__label&quot; for=&quot;password&quot;&gt;New Password&lt;/label&gt;
+        &lt;input class=&quot;field__input&quot; id=&quot;password&quot; type=&quot;password&quot; placeholder=&quot;Enter password&quot;
+            autocomplete=&quot;new-password&quot;&gt;
+    &lt;/div&gt;
+                            </code>
+                        </pre>
+                    </div>
+                    <div>
+                        <div class="form__field field">
+                            <label class="field__label" for="date">DOB</label>
+                            <input class="field__input" type="date" id="date">
+                        </div>
+                        <div class="form__field field">
+                            <label class="field__label" for="file">File input</label>
+                            <input class="field__input" type="file" id="file" multiple>
+                        </div>
+                        <pre class="code-hljs">
+                            <button class="btn btn--icon btn--sm btn--copy"><i class="fas fa-copy"></i></button>
+                            <code class="language-html">
+    &lt;div class=&quot;form__field field&quot;&gt;
+        &lt;label class=&quot;field__label&quot; for=&quot;date&quot;&gt;DOB&lt;/label&gt;
+        &lt;input class=&quot;field__input&quot; type=&quot;date&quot; id=&quot;date&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;form__field field&quot;&gt;
+        &lt;label class=&quot;field__label&quot; for=&quot;file&quot;&gt;File input&lt;/label&gt;
+        &lt;input class=&quot;field__input&quot; type=&quot;file&quot; id=&quot;file&quot; multiple&gt;
+    &lt;/div&gt;
+                            </code>
+                        </pre>
+                    </div>
+                    <div>
+                        <div class="form__field field">
+                            <label class="field__label" for="number">Number</label>
+                            <input class="field__input" id="number" type="number" placeholder="Enter some number"
+                                autocomplete="off">
+                        </div>
+                        <pre class="code-hljs">
+                            <button class="btn btn--icon btn--sm btn--copy"><i class="fas fa-copy"></i></button>
+                            <code class="language-html">
+    &lt;div class=&quot;form__field field&quot;&gt;
+        &lt;label class=&quot;field__label&quot; for=&quot;number&quot;&gt;Number&lt;/label&gt;
+        &lt;input class=&quot;field__input&quot; id=&quot;number&quot; type=&quot;number&quot; placeholder=&quot;Enter some number&quot;
+            autocomplete=&quot;off&quot;&gt;
+    &lt;/div&gt;
+                            </code>
+                        </pre>
+                    </div>
+                    <div>
+                        <div class="form__field field">
+                            <label for="text-area" class="field__label">Text area</label>
+                            <textarea class="field__input" id="text-area" wrap="hard"
+                                placeholder="Say something"></textarea>
+                        </div>
+                        <pre class="code-hljs">
+                            <button class="btn btn--icon btn--sm btn--copy"><i class="fas fa-copy"></i></button>
+                            <code class="language-html">
+    &lt;div class=&quot;form__field field&quot;&gt;
+        &lt;label for=&quot;text-area&quot; class=&quot;field__label&quot;&gt;Text area&lt;/label&gt;
+        &lt;textarea class=&quot;field__input&quot; id=&quot;text-area&quot; wrap=&quot;hard&quot;
+            placeholder=&quot;Say something&quot;&gt;&lt;/textarea&gt;
+    &lt;/div&gt;
+                            </code>
+                        </pre>
+                    </div>
+                    <div>
+                        <div class="form__field field">
+                            <label class="field__label" for="slider">Slider</label>
+                            <input type="range" min="5" max="20" class="field__input--slider" id="slider">
+                        </div>
+                        <pre class="code-hljs">
+                            <button class="btn btn--icon btn--sm btn--copy"><i class="fas fa-copy"></i></button>
+                            <code class="language-html">
+    &lt;div class=&quot;form__field field&quot;&gt;
+        &lt;label class=&quot;field__label&quot; for=&quot;slider&quot;&gt;Slider&lt;/label&gt;
+        &lt;input type=&quot;range&quot; min=&quot;5&quot; max=&quot;20&quot; class=&quot;field__input--slider&quot; id=&quot;slider&quot;&gt;
+    &lt;/div&gt;
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </article>
+            <article class="comp__usage">
+                <h2 class="comp__title title--md">Form Field States</h2>
+                <div class="comp__preview">
+                    <div>
+                        <div class="form__field field field--readonly">
+                            <label class="field__label " for="text">Read-only input</label>
+                            <input class="field__input" id="text" type="text" value="Read only" readonly>
+                        </div>
+                        <pre class="code-hljs">
+                            <button class="btn btn--icon btn--sm btn--copy"><i class="fas fa-copy"></i></button>
+                            <code class="language-html">
+    &lt;div class=&quot;form__field field field--readonly&quot;&gt;
+        &lt;label class=&quot;field__label &quot; for=&quot;text&quot;&gt;Read-only input&lt;/label&gt;
+        &lt;input class=&quot;field__input&quot; id=&quot;text&quot; type=&quot;text&quot; value=&quot;Read only&quot; readonly&gt;
+    &lt;/div&gt;
+                            </code>
+                        </pre>
+                    </div>
+                    <div>
+                        <div class="form__field field field--disabled">
+                            <label class="field__label" for="text">Disabled input</label>
+                            <input class="field__input" id="text" type="text" disabled>
+                        </div>
+                        <pre class="code-hljs">
+                            <button class="btn btn--icon btn--sm btn--copy"><i class="fas fa-copy"></i></button>
+                            <code class="language-html">
+    &lt;div class=&quot;form__field field field--disabled&quot;&gt;
+        &lt;label class=&quot;field__label&quot; for=&quot;text&quot;&gt;Disabled input&lt;/label&gt;
+        &lt;input class=&quot;field__input&quot; id=&quot;text&quot; type=&quot;text&quot; disabled&gt;
+    &lt;/div&gt;
+                            </code>
+                        </pre>
+                    </div>
+                    <div>
+                        <div class="form__field field field--required">
+                            <label class="field__label" for="text">Required input</label>
+                            <input class="field__input" id="text" type="text" required>
+                            <small class="field__text">This is a required field.</small>
+                        </div>
+                        <pre class="code-hljs">
+                            <button class="btn btn--icon btn--sm btn--copy"><i class="fas fa-copy"></i></button>
+                            <code class="language-html">
+    &lt;div class=&quot;form__field field field--required&quot;&gt;
+        &lt;label class=&quot;field__label&quot; for=&quot;text&quot;&gt;Required input&lt;/label&gt;
+        &lt;input class=&quot;field__input&quot; id=&quot;text&quot; type=&quot;text&quot; required&gt;
+        &lt;small class=&quot;field__text&quot;&gt;This is a required field.&lt;/small&gt;
+    &lt;/div&gt;
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </article>
+            <article class="comp__usage">
+                <h2 class="comp__title title--md">Form Field Sets</h2>
+                <p class="comp__details">
+                    A set of fields that can appear grouped together
+                </p>
+                <div class="comp__preview">
+                    <div>
+                        <fieldset class="form__field field--set field--horizontal field--checkbox">
+                            <legend class="field__label">Custom checkbox</legend>
+                            <div class="checkbox--container">
+                                <input type="checkbox" id="option-1" name="option-1">
+                                <label class="field__label" for="option-1">Option 1</label>
+                            </div>
+                            <div class="checkbox--container">
+                                <input type="checkbox" id="option-2" name="option-2">
+                                <label class="field__label" for="option-2">Option 2</label>
+                            </div>
+                            <div class="checkbox--container">
+                                <input type="checkbox" id="option-3" name="option-3">
+                                <label class="field__label" for="option-3">Option 3</label>
+                            </div>
+                        </fieldset>
+                        <pre class="code-hljs">
+                            <button class="btn btn--icon btn--sm btn--copy"><i class="fas fa-copy"></i></button>
+                            <code class="language-html">
+    &lt;fieldset class=&quot;form__field field--set field--horizontal field--checkbox&quot;&gt;
+        &lt;legend class=&quot;field__label&quot;&gt;Custom checkbox&lt;/legend&gt;
+        &lt;div class=&quot;checkbox--container&quot;&gt;
+            &lt;input type=&quot;checkbox&quot; id=&quot;option-1&quot; name=&quot;option-1&quot;&gt;
+            &lt;label class=&quot;field__label&quot; for=&quot;option-1&quot;&gt;Option 1&lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;checkbox--container&quot;&gt;
+            &lt;input type=&quot;checkbox&quot; id=&quot;option-2&quot; name=&quot;option-2&quot;&gt;
+            &lt;label class=&quot;field__label&quot; for=&quot;option-2&quot;&gt;Option 2&lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;checkbox--container&quot;&gt;
+            &lt;input type=&quot;checkbox&quot; id=&quot;option-3&quot; name=&quot;option-3&quot;&gt;
+            &lt;label class=&quot;field__label&quot; for=&quot;option-3&quot;&gt;Option 3&lt;/label&gt;
+        &lt;/div&gt;
+    &lt;/fieldset&gt;
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+    </main>
+</body>
+
+</html>
