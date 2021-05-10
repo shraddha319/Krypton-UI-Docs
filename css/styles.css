@@ -1,5 +1,5 @@
-.main {
-    /* margin-top: 300; */
+.main--landing {
+    overflow: hidden;
 }
 
 #header {
@@ -7,9 +7,20 @@
     z-index: 1;
 }
 
+#header .logo {
+    width: 55px;
+}
+
+#header .brand__name {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-left: 10px;
+    color: white;
+}
+
 .main__hero {
+    margin: 140px auto;
     width: 60%;
-    margin: 200px auto;
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -24,18 +35,54 @@
 }
 
 .hero__title {
-    font-size: 4.5rem;
-}
-
-.hero__title strong {
+    font-size: 4rem;
+    font-weight: 500;
     color: var(--clr-primary);
 }
 
-.hero__description {
-    font-weight: 600;
-    font-size: 2rem;
+/* .hero__title--static {
+    margin-right: 1rem;
+}
+
+.hero__title--dynamic {
+    text-align: left;
+    color: var(--clr-primary);
+    overflow: hidden;
+    height: 2.5rem;
+}
+
+.hero__title--dynamic li {
+    position: relative;
+    animation: typing 1.4s steps(11) infinite;
+}
+
+.hero__title--dynamic li::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: white;
+    border-left: 1px solid var(--clr-primary);
+    left: 0;
+    animation: typing 1.4s steps(11) infinite;
+}
+
+@keyframes typing {
+    100% {
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+} */
+
+
+.hero__sub-title {
+    font-weight: 700;
     color: rgba(0%, 0%, 0%, 0.7);
-    margin-bottom: 1.2em;
+}
+
+.hero__description {
+    line-height: 1.5em;
+    color: rgba(0%, 0%, 0%, 0.7);
 }
 
 .hero__link .btn {

@@ -7,8 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Krypton UI | Docs</title>
     <link rel="stylesheet" href="https://krypton-ui.netlify.app/main.css" />
-    <!-- <script defer src="https://krypton-ui.netlify.app/script.js"></script> -->
-    <script defer src="./script1.js"></script>
+    <script defer src="https://krypton-ui.netlify.app/script.js"></script>
 
     <link rel="stylesheet" href="css/styles.css" />
 
@@ -32,17 +31,20 @@
     <main class="main main--landing">
         <section class="main__hero hero">
             <h1 class="hero__title">Krypton UI</h1>
-            <h2 class="title--lg">Build Modular UI with ease.</h2>
-            <p class="hero__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum sit
-                vitae, pariatur.
+            <h2 class="hero__sub-title title--xlg">Build Modular UI with ease.</h2>
+            <p class="hero__description text--md text">
+                Krypton UI is a simple, open source CSS component library that provides you the style blocks needed to
+                build your web applications.
             </p>
             <div class="hero__link flex--row">
-                <a href="documentation.html" class="btn btn--lg btn--primary">Documentation</a>
-                <a class="btn btn--lg btn--icon--right btn--secondary">
-                    <i class="fab fa--md fa-github"></i>
-                    <span class="btn__text">GitHub</span>
-                </a>
+                <button class="btn btn--md text--md btn--primary" onclick="location.href='/getting-started.html'">Get
+                    Started</button>
+                <button class=" btn btn--md btn--icon--left btn--secondary">
+                    <span class="btn__icon fa--md">
+                        <i class="fab fa-github"></i>
+                    </span>
+                    <p class="btn__text text--md">GitHub</p>
+                </button>
             </div>
         </section>
     </main>
@@ -50,3 +52,13 @@
 </body>
 
 </html>
+
+<!-- <h1 class="hero__title flex--row">
+    <div class="hero__title--static">Krypton UI is</div>
+    <ul class="hero__title--dynamic list--no-bullets">
+        <li>Extensible</li>
+        <li>Modular</li>
+        <li>Open Source</li>
+        <li>Responsive</li>
+    </ul>
+</h1> -->
