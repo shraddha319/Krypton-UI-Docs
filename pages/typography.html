@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Krypton UI | Docs</title>
+    <!-- fontawesome cdn-->
+    <script defer src="https://use.fontawesome.com/releases/v5.15.2/js/all.js"
+        integrity="sha384-vuFJ2JiSdUpXLKGK+tDteQZBqNlMwAjhZ3TvPaDfN9QmbPb7Q8qUpbSNapQev3YF" crossorigin="anonymous">
+    </script>
+
+    <link rel="stylesheet" href="https://krypton-ui.netlify.app/main.css" />
+    <!-- <script defer src="https://krypton-ui.netlify.app/script.js"></script> -->
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/docs.css">
+
+    <!-- highlight js -->
+
+    <link rel="stylesheet" href="../syntax-highlighter/default.min.css">
+    <script src="../syntax-highlighter/highlight.min.js"></script>
+    <link rel="stylesheet" href="../syntax-highlighter/atelier-cave-light.css" />
+    <script defer src="../syntax-highlighter/copyToClipboard.js"></script>
+
+    <script>
+        hljs.highlightAll();
+    </script>
+
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("/shared/header.html");
+            $("#footer").load("/shared/footer.html");
+        });
+    </script>
+    <script defer src="/js/docs.js"></script>
+
+</head>
+
+<body>
+    <div id="header">
+    </div>
+    <nav class="side-nav">
+        <ul class="list--no-bullets">
+            <li class="side-nav__item">
+                <a href="/pages/getting-started.html" class="link">Getting Started</a>
+            </li>
+            <li class="side-nav__item">
+                <a href="/pages/theme.html" class="link">Theme</a>
+            </li>
+            <li class="side-nav__item">
+                <a href="/pages/typography.html" class="link active">Typography</a>
+            </li>
+            <li class="side-nav__item side-nav__drop-down">
+                <a class="link">Components
+                    <span><i class="fas fa-caret-down"></i></span>
+                </a>
+                <ul class="list--no-bullets">
+                    <li class="side-nav__item">
+                        <a class="link" href="/components/alert.html">Alert</a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a class="link" href="/components/avatar.html">Avatar</a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a class="link" href="/components/badge.html">Badge</a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a class="link" href="/components/button.html">Button</a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a class="link" href="/components/card.html">Card</a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a class="link" href="/components/form.html">Form</a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a class="link" href="/components/image.html">Image</a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a class="link" href="/components/list.html">List</a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a class="link" href="/components/modal.html">Modal</a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a class="link" href="/components/navbar.html">Navbar</a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a class="link" href="/components/toast.html">Toast</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="main main--documentation">
+        <section class="docs">
+            <h1 class="title--md title">Typography</h1>
+            <!-- <p class="text--sm text">Typography is defined as the process of using different fonts. -->
+            </p>
+            <article class="typography">
+                <div class="typography__container">
+                    <h3 class="title--sm title">Heading</h3>
+                    <h1 class=" title--xlg title">This is a heading.</h1>
+                    <h2 class="title--lg title">This is a heading.</h2>
+                    <h3 class="title--md title">This is a heading.</h3>
+                    <h4 class="title--sm title">This is a heading.</h4>
+                    <h5 class="title--xs title">This is a heading.</h5>
+                    <pre class="code-hljs">
+                        <button class="btn btn--icon btn--sm btn--copy"><i class="fas fa-copy"></i></button>
+                        <code class="language-html">
+            &lt;h1 class=&quot;title--xlg title&quot;&gt;This is a heading.&lt;/h1&gt;
+            &lt;h2 class=&quot;title--lg title&quot;&gt;This is a heading.&lt;/h2&gt;
+            &lt;h3 class=&quot;title--md title&quot;&gt;This is a heading.&lt;/h3&gt;
+            &lt;h4 class=&quot;title--sm title&quot;&gt;This is a heading.&lt;/h4&gt;
+            &lt;h5 class=&quot;title--xs title&quot;&gt;This is a heading.&lt;/h5&gt;
+                        </code>
+                    </pre>
+                </div>
+                <div class="typography__container">
+                    <h3 class="title--sm title">Text Sizes</h3>
+                    <p class="text--xlg text">The quick brown fox jumps over the lazy dog.</p>
+                    <p class="text--lg text">The quick brown fox jumps over the lazy dog.</p>
+                    <p class="text--md text">The quick brown fox jumps over the lazy dog.</p>
+                    <p class="text--sm text">The quick brown fox jumps over the lazy dog.</p>
+                    <p class="text--xs text">The quick brown fox jumps over the lazy dog.</p>
+                    <pre class="code-hljs">
+                        <button class="btn btn--icon btn--sm btn--copy"><i class="fas fa-copy"></i></button>
+                        <code class="language-html">
+            &lt;p class=&quot;text--xlg text&quot;&gt;The quick brown fox jumps over the lazy dog.&lt;/p&gt;
+            &lt;p class=&quot;text--lg text&quot;&gt;The quick brown fox jumps over the lazy dog.&lt;/p&gt;
+            &lt;p class=&quot;text--md text&quot;&gt;The quick brown fox jumps over the lazy dog.&lt;/p&gt;
+            &lt;p class=&quot;text--sm text&quot;&gt;The quick brown fox jumps over the lazy dog.&lt;/p&gt;
+            &lt;p class=&quot;text--xs text&quot;&gt;The quick brown fox jumps over the lazy dog.&lt;/p&gt;
+                        </code>
+                    </pre>
+                </div>
+                <div class="typography__container">
+                    <h3 class="title--sm title">Text States</h3>
+                    <p class="text--muted text">The quick brown fox jumps over the lazy dog.</p>
+                    <p class="text--md text--primary text">The quick brown fox jumps over the lazy dog.</p>
+                    <pre class="code-hljs">
+                        <button class="btn btn--icon btn--sm btn--copy"><i class="fas fa-copy"></i></button>
+                        <code class="language-html">
+            &lt;p class=&quot;text--muted&quot;&gt;The quick brown fox jumps over the lazy dog.&lt;/p&gt;
+            &lt;p class=&quot;text--md text--primary&quot;&gt;The quick brown fox jumps over the lazy dog.&lt;/p&gt;
+                        </code>
+                    </pre>
+                </div>
+            </article>
+    </main>
+</body>
+
+</html>

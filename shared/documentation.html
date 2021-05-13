@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Krypton UI | Docs</title>
+    <link rel="stylesheet" href="https://krypton-ui.netlify.app/main.css" />
+    <!-- <script defer src="https://krypton-ui.netlify.app/script.js"></script> -->
+    <script defer src="./script1.js"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/docs.css">
+    <script defer src="./docs.js"></script>
+
+
+    <!-- fontawesome cdn-->
+    <script defer src="https://use.fontawesome.com/releases/v5.15.2/js/all.js"
+        integrity="sha384-vuFJ2JiSdUpXLKGK+tDteQZBqNlMwAjhZ3TvPaDfN9QmbPb7Q8qUpbSNapQev3YF" crossorigin="anonymous">
+    </script>
+
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("/header.html");
+            $("#footer").load("/footer.html");
+            $("#alert").load("/components/alert.html");
+            $("#avatar").load("/components/avatar.html");
+            $("#badge").load("/components/badge.html");
+            $("#button").load("/components/button.html");
+            $("#card").load("/components/card.html");
+            $("#form").load("/components/form.html");
+            $("#image").load("/components/image.html");
+            $("#list").load("/components/list.html");
+            $("#modal").load("/components/modal.html");
+            $("#navbar").load("/components/navbar.html");
+            $("#toast").load("/components/toast.html");
+        });
+    </script>
+
+</head>
+
+<body>
+    <div id="header">
+    </div>
+
+    <main class="main main--documentation">
+
+        <nav class="side-nav">
+            <ul class="list--no-bullets">
+                <li class="side-nav__item">
+                    <a href="/getting-started.html" class="link">Getting Started</a>
+                </li>
+                <li class="side-nav__item">
+                    <a href="/theme.html" class="link">Theme</a>
+                </li>
+                <li class="side-nav__item">
+                    <a href="/typography.html" class="link">Typography</a>
+                </li>
+                <li class="side-nav__item side-nav__drop-down">
+                    <a class="link">Components
+                        <span><i class="fas fa-caret-down"></i></span>
+                    </a>
+                    <ul class="list--no-bullets">
+                        <li class="side-nav__item">
+                            <a class="link" href="/components/alert.html">Alert</a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a class="link" href="/components/avatar.html">Avatar</a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a class="link" href="/components/badge.html">Badge</a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a class="link" href="/components/button.html">Button</a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a class="link" href="/components/card.html">Card</a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a class="link" href="/components/form.html">Form</a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a class="link" href="/components/image.html">Image</a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a class="link" href="/components/list.html">List</a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a class="link" href="/components/modal.html">Modal</a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a class="link" href="/components/navbar.html">Navbar</a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a class="link" href="/components/toast.html">Toast</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+    </main>
+</body>
+
+</html>
