@@ -6,17 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Krypton UI | Docs</title>
-    <link rel="stylesheet" href="https://krypton-ui.netlify.app/main.css" />
-    <!-- <script defer src="https://krypton-ui.netlify.app/script.js"></script> -->
-    <script defer src="../script1.js"></script>
-
-    <link rel="stylesheet" href="../css/styles.css" />
-    <link rel="stylesheet" href="../css/docs.css">
-
     <!-- fontawesome cdn-->
     <script defer src="https://use.fontawesome.com/releases/v5.15.2/js/all.js"
         integrity="sha384-vuFJ2JiSdUpXLKGK+tDteQZBqNlMwAjhZ3TvPaDfN9QmbPb7Q8qUpbSNapQev3YF" crossorigin="anonymous">
     </script>
+
+    <link rel="stylesheet" href="https://krypton-ui.netlify.app/main.css" />
+    <script defer src="https://krypton-ui.netlify.app/script.js"></script>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/docs.css">
 
     <!-- highlight js -->
 
@@ -33,11 +31,11 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script>
         $(function () {
-            $("#header").load("/header.html");
-            $("#footer").load("/footer.html");
+            $("#header").load("/shared/header.html");
+            $("#footer").load("/shared/footer.html");
         });
     </script>
-    <script defer src="/docs.js"></script>
+    <script defer src="/js/docs.js"></script>
 
 </head>
 
@@ -47,19 +45,19 @@
     <nav class="side-nav">
         <ul class="list--no-bullets">
             <li class="side-nav__item">
-                <a href="/getting-started.html" class="link">Getting Started</a>
+                <a href="/pages/getting-started.html" class="link">Getting Started</a>
             </li>
             <li class="side-nav__item">
-                <a href="/theme.html" class="link">Theme</a>
+                <a href="/pages/theme.html" class="link">Theme</a>
             </li>
             <li class="side-nav__item">
-                <a href="/typography.html" class="link">Typography</a>
+                <a href="/pages/typography.html" class="link">Typography</a>
             </li>
             <li class="side-nav__item side-nav__drop-down">
                 <a class="link">Components
                     <span><i class="fas fa-caret-down"></i></span>
                 </a>
-                <ul class="list--no-bullets">
+                <ul class="list--no-bullets show">
                     <li class="side-nav__item">
                         <a class="link" href="/components/alert.html">Alert</a>
                     </li>
@@ -88,7 +86,7 @@
                         <a class="link" href="/components/modal.html">Modal</a>
                     </li>
                     <li class="side-nav__item">
-                        <a class="link" href="/components/navbar.html">Navbar</a>
+                        <a class="link active" href="/components/navbar.html">Navbar</a>
                     </li>
                     <li class="side-nav__item">
                         <a class="link" href="/components/toast.html">Toast</a>

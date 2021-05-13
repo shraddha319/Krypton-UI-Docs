@@ -6,23 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=0.7" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Krypton UI | Docs</title>
-    <link rel="stylesheet" href="https://krypton-ui.netlify.app/main.css" />
-    <script defer src="https://krypton-ui.netlify.app/script.js"></script>
-
-    <link rel="stylesheet" href="css/styles.css" />
-
     <!-- fontawesome cdn-->
     <script defer src="https://use.fontawesome.com/releases/v5.15.2/js/all.js"
         integrity="sha384-vuFJ2JiSdUpXLKGK+tDteQZBqNlMwAjhZ3TvPaDfN9QmbPb7Q8qUpbSNapQev3YF" crossorigin="anonymous">
     </script>
+
+    <link rel="stylesheet" href="https://krypton-ui.netlify.app/main.css" />
+    <!-- <script defer src="https://krypton-ui.netlify.app/script.js"></script> -->
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/docs.css">
+
+    <!-- highlight js -->
+
+    <link rel="stylesheet" href="../syntax-highlighter/default.min.css">
+    <script src="../syntax-highlighter/highlight.min.js"></script>
+    <link rel="stylesheet" href="../syntax-highlighter/atelier-cave-light.css" />
+    <script defer src="../syntax-highlighter/copyToClipboard.js"></script>
+
+    <script>
+        hljs.highlightAll();
+    </script>
+
     <!--JQuery-->
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script>
         $(function () {
-            $("#header").load("./header.html");
-            $("#footer").load("./footer.html");
+            $("#header").load("/shared/header.html");
+            $("#footer").load("/shared/footer.html");
         });
     </script>
+    <script defer src="/js/docs.js"></script>
 </head>
 
 <body>
@@ -37,7 +50,8 @@
                 build your web applications.
             </p>
             <div class="hero__link flex--row">
-                <button class="btn btn--md text--md btn--primary" onclick="location.href='/getting-started.html'">Get
+                <button class="btn btn--md text--md btn--primary"
+                    onclick="location.href='/pages/getting-started.html'">Get
                     Started</button>
                 <button class=" btn btn--md btn--icon--left btn--secondary">
                     <span class="btn__icon fa--md">
