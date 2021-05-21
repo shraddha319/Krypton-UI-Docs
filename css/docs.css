@@ -6,7 +6,7 @@
 }
 
 .docs {
-  margin-top: 140px;
+  margin-top: 30px;
   width: 100%;
 }
 
@@ -48,6 +48,7 @@
   top: 0;
   left: 0;
   letter-spacing: 1px;
+  z-index: 1;
 }
 
 .side-nav>ul {
@@ -60,6 +61,7 @@
   position: relative;
   text-transform: uppercase;
   font-size: 0.9em;
+  width: 100%;
 }
 
 .side-nav__item>.link:hover,
