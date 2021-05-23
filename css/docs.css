@@ -1,11 +1,13 @@
 .main--documentation {
-  margin-left: 20%;
-  width: 75%;
+  display: grid;
+  grid-template-columns: 250px auto;
+  column-gap: 4rem;
   margin-top: 100px;
-  /* height: 100%; */
 }
 
 .docs {
+  grid-column: 2/3;
+  width: 75%;
   margin-top: 30px;
   width: 100%;
 }
@@ -41,7 +43,7 @@
 .side-nav {
   background: var(--clr-gray-light);
   height: 100%;
-  width: 300px;
+  width: 250px;
   color: var(--clr-black);
   font-weight: 600;
   position: fixed;
