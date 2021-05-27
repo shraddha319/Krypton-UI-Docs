@@ -104,8 +104,7 @@ main {
     content: "";
     display: block;
     height: 3px;
-    background: linear-gradient(to right, #fc354c, #0abfbc);
-    ;
+    background: var(--clr-gradient);
     width: 100%;
     transform: scale(0, 1);
     transition: transform 250ms ease-in-out;
