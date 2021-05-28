@@ -12,9 +12,13 @@
   width: 100%;
 }
 
+.docs .comp__preview {
+  max-width: 70%;
+}
+
 .code-hljs {
   position: relative;
-  width: 75%;
+  width: 100%;
 }
 
 .code-hljs code {
