@@ -110,7 +110,7 @@
                 <h2 class="title title--sm">Toast Usage</h2>
                 <div class="comp__preview">
                     <button class="btn btn--primary" id="trigger--toast">Show Toast</button>
-                    <div class="toast">
+                    <div class="toast toast--warning">
                         <div class="toast__layout">
                             <span class="toast__icon fa--sm">
                                 <i class="fas fa-exclamation-triangle"></i>
@@ -119,7 +119,9 @@
                                 <strong>Warning: </strong>This is a warning alert
                             </span>
                             <button class="toast__close btn">
-                                <i class="fa--sm fas fa-times"></i>
+                                <span class="fa--xs">
+                                    <i class="fas fa-times"></i>
+                                </span>
                             </button>
                         </div>
                     </div>
@@ -127,7 +129,7 @@
             <pre class="code-hljs">
                     <button class="btn btn--icon btn--sm btn--copy"><i class="fas fa-copy"></i></button>
                     <code class="language-html">
-            &lt;div class=&quot;toast&quot;&gt;
+            &lt;div class=&quot;toast toast--warning&quot;&gt;
                 &lt;div class=&quot;toast__layout&quot;&gt;
                     &lt;span class=&quot;toast__icon fa--sm&quot;&gt;
                         &lt;i class=&quot;fas fa-exclamation-triangle&quot;&gt;&lt;/i&gt;
@@ -136,7 +138,9 @@
                         &lt;strong&gt;Warning: &lt;/strong&gt;This is a warning alert
                     &lt;/span&gt;
                     &lt;button class=&quot;toast__close btn&quot;&gt;
-                        &lt;i class=&quot;fa--sm fas fa-times&quot;&gt;&lt;/i&gt;
+                        &lt;span class=&quot;fa--xs&quot;&gt;
+                            &lt;i class=&quot;fas fa-times&quot;&gt;&lt;/i&gt;
+                        &lt;/span&gt;                      
                     &lt;/button&gt;
                 &lt;/div&gt;
             &lt;/div&gt;
