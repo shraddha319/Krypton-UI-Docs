@@ -9,12 +9,12 @@
   grid-column: 2/3;
   width: 75%;
   margin-top: 30px;
-  width: 100%;
+  width: 70%;
 }
 
-.docs .comp__preview {
+/* .docs .comp__preview {
   max-width: 70%;
-}
+} */
 
 .code-hljs {
   position: relative;
