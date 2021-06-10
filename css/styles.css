@@ -96,10 +96,12 @@ main {
 
 .footer__social .link {
     margin: 0 0.2rem;
+    transition: 250ms;
 }
 
 .footer__social .link:hover {
-    color: var(--clr-primary)
+    color: var(--clr-primary);
+    transform: scale(1.2);
 }
 
 
