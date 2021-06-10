@@ -68,6 +68,7 @@
   text-transform: uppercase;
   font-size: 0.9em;
   width: 100%;
+  transition: 250ms;
 }
 
 .side-nav__item>.link:hover,
@@ -81,7 +82,7 @@
 }
 
 .side-nav__drop-down ul .link {
-  padding-left: 100px;
+  padding-left: 30%;
   text-transform: capitalize;
 }
 
